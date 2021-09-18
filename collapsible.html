@@ -33,26 +33,25 @@
           </div>
         </div>
       </nav>
-      <div class="container"><a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i class="material-icons">menu</i></a></div>
-      <ul id="nav-mobile" class="sidenav sidenav-fixed">
-        <li class="logo"><a id="logo-container" href="/materialize/" class="brand-logo">
+      <div class="container"><a class="top-nav sidenav-trigger full hide-on-large-only" href="#" data-target="nav-mobile"><i class="material-icons">menu</i></a></div>
+      <ul class="sidenav sidenav-fixed" id="nav-mobile">
+        <li class="logo"><a class="brand-logo" id="logo-container" href="/materialize/">
             <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not support SVG</object></a></li>
-        <li class="version"><a href="#" data-target="version-dropdown" class="dropdown-trigger">
-            1.0.0
-            <svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></a>
-          <ul id="version-dropdown" class="dropdown-content">
+        <li class="version"><a class="dropdown-trigger" href="#" data-target="version-dropdown">
+            1.0.0<svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></a>
+          <ul class="dropdown-content" id="version-dropdown">
             <li><a>1.0.0</a></li>
-            <li><a href="http://archives.materializecss.com/0.100.2/">0.100.2</a></li>
+            <li><a href="http://archives.materializecss.com/0.100.2/" target="_blank" rel="noopener noreferrer">0.100.2</a></li>
           </ul>
         </li>
         <li class="search">
           <div class="search-wrapper">
-            <input id="search" placeholder="Search"><i class="material-icons">search</i>
+            <input id="search" placeholder="Search" autocomplete="off"><i class="material-icons">search</i>
             <div class="search-results"></div>
           </div>
         </li>
-        <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
-        <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" href="about.html">About</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" href="getting-started.html">Getting Started</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li class="bold"><a class="collapsible-header waves-effect waves-teal">CSS</a>
@@ -126,7 +125,7 @@
             </li>
           </ul>
         </li>
-        <li class="bold"><a href="mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" href="mobile.html">Mobile</a></li>
       </ul>
     </header>
     <main><div class="container">
@@ -174,7 +173,10 @@
           </ul>
           <br>
 
-          <pre><code class="language-markup">
+          <pre style="padding-top: 0px;">
+            <span class="copyMessage">Copied!</span>
+            <i class="material-icons copyButton">content_copy</i>
+            <code class="language-markup copiedText">
   &lt;ul class="collapsible">
     &lt;li>
       &lt;div class="collapsible-header">&lt;i class="material-icons">filter_drama&lt;/i>First&lt;/div>
@@ -189,12 +191,16 @@
       &lt;div class="collapsible-body">&lt;span>Lorem ipsum dolor sit amet.&lt;/span>&lt;/div>
     &lt;/li>
   &lt;/ul>
-        </code></pre>
+          </code>
+        </pre>
       </div>
 
       <div id="initialization" class="section scrollspy">
         <h3 class="header">Initialization</h3>
-        <pre><code class="language-javascript">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-javascript copiedText">
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, {
@@ -209,7 +215,8 @@
       // specify options here
     });
   });
-        </code></pre>
+          </code>
+        </pre>
 
         <br>
         <br>
@@ -250,11 +257,15 @@
             </div>
           </li>
         </ul>
-        <pre><code class="language-markup">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup copiedText">
   &lt;li class="active">
     &lt;div class="collapsible-header">&lt;i class="material-icons">place&lt;/i>Second&lt;/div>
   &lt;/li>
-        </code></pre>
+          </code>
+        </pre>
       </div>
 
       <div id="options" class="scrollspy section">
@@ -328,7 +339,10 @@
         <blockquote>
           <p>Because jQuery is no longer a dependency, all the methods are called on the plugin instance. You can get the plugin
             instance like this: </p>
-          <pre><code class="language-javascript col s12">
+            <pre style="padding-top: 0px;">
+              <span class="copyMessage">Copied!</span>
+              <i class="material-icons copyButton">content_copy</i>
+              <code class="language-javascript col s12 copiedText">
   var instance = M.Collapsible.getInstance(elem);
 
   /* jQuery Method Calls
@@ -338,7 +352,8 @@
     $('.collapsible').collapsible('methodName');
     $('.collapsible').collapsible('methodName', paramName);
   */
-        </code></pre>
+              </code>
+            </pre>
         </blockquote>
         <h5 class="method-header">
           .open();
@@ -614,7 +629,7 @@ var instance = M.Collapsible.init(elem, {
         </div>
       </div>
     </footer>
-
+    
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }

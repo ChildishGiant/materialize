@@ -33,26 +33,25 @@
           </div>
         </div>
       </nav>
-      <div class="container"><a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-large-only"><i class="material-icons">menu</i></a></div>
-      <ul id="nav-mobile" class="sidenav sidenav-fixed">
-        <li class="logo"><a id="logo-container" href="/materialize/" class="brand-logo">
+      <div class="container"><a class="top-nav sidenav-trigger full hide-on-large-only" href="#" data-target="nav-mobile"><i class="material-icons">menu</i></a></div>
+      <ul class="sidenav sidenav-fixed" id="nav-mobile">
+        <li class="logo"><a class="brand-logo" id="logo-container" href="/materialize/">
             <object id="front-page-logo" type="image/svg+xml" data="res/materialize.svg">Your browser does not support SVG</object></a></li>
-        <li class="version"><a href="#" data-target="version-dropdown" class="dropdown-trigger">
-            1.0.0
-            <svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></a>
-          <ul id="version-dropdown" class="dropdown-content">
+        <li class="version"><a class="dropdown-trigger" href="#" data-target="version-dropdown">
+            1.0.0<svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></a>
+          <ul class="dropdown-content" id="version-dropdown">
             <li><a>1.0.0</a></li>
-            <li><a href="http://archives.materializecss.com/0.100.2/">0.100.2</a></li>
+            <li><a href="http://archives.materializecss.com/0.100.2/" target="_blank" rel="noopener noreferrer">0.100.2</a></li>
           </ul>
         </li>
         <li class="search">
           <div class="search-wrapper">
-            <input id="search" placeholder="Search"><i class="material-icons">search</i>
+            <input id="search" placeholder="Search" autocomplete="off"><i class="material-icons">search</i>
             <div class="search-results"></div>
           </div>
         </li>
-        <li class="bold"><a href="about.html" class="waves-effect waves-teal">About</a></li>
-        <li class="bold"><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" href="about.html">About</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" href="getting-started.html">Getting Started</a></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">
             <li class="bold"><a class="collapsible-header waves-effect waves-teal">CSS</a>
@@ -126,7 +125,7 @@
             </li>
           </ul>
         </li>
-        <li class="bold"><a href="mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+        <li class="bold"><a class="waves-effect waves-teal" href="mobile.html">Mobile</a></li>
       </ul>
     </header>
     <main><div class="container">
@@ -141,40 +140,56 @@
         <a class="waves-effect waves-light btn">button</a>
         <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
         <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-        <pre><code class="language-markup col s12">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup col s12 copiedText">
 &lt;a class="waves-effect waves-light btn">button&lt;/a>
 &lt;a class="waves-effect waves-light btn">&lt;i class="material-icons left">cloud&lt;/i>button&lt;/a>
 &lt;a class="waves-effect waves-light btn">&lt;i class="material-icons right">cloud&lt;/i>button&lt;/a>
-        </code></pre>
+          </code>
+        </pre>
       </div>
       <div id="floating" class="section scrollspy">
         <h3 class="header">Floating</h3>
         <a class="btn-floating waves-effect waves-light btn-large red"><i class="material-icons">add</i></a><br><br>
-        <pre><code class="language-markup col s12">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup col s12 copiedText">
   &lt;a class="btn-floating btn-large waves-effect waves-light red">&lt;i class="material-icons">add&lt;/i>&lt;/a>
-        </code></pre>
+          </code>
+        </pre>
         <br>
 
         <h5>Floating Action Button</h5>
-        <p>See the documentation on <a href="/floating-action-button.html">this page</a></p>
+        <p>See the documentation on <a href="floating-action-button.html">this page</a></p>
       </div>
       <div id="flat" class="section scrollspy">
         <h3 class="header">Flat</h3>
         <p>Flat buttons are used to reduce excessive layering. For example, flat buttons are usually used for actions within a card or modal so there aren't too many overlapping shadows.</p>
         <a class="waves-effect waves-teal btn-flat">Button</a>
-        <pre><code class="language-markup col s12">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup col s12 copiedText">
   &lt;a class="waves-effect waves-teal btn-flat">Button&lt;/a>
-        </code></pre>
+          </code>
+        </pre>
       </div>
       <div id="submit" class="section scrollspy">
         <h3 class="header">Submit Button</h3>
         <p>When you use a button to submit a form, instead of using a input tag, use a button tag with a type submit</p>
         <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
-        <pre><code class="language-markup">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup copiedText">
   &lt;button class="btn waves-effect waves-light" type="submit" name="action">Submit
     &lt;i class="material-icons right">send&lt;/i>
   &lt;/button>
-        </code></pre>
+          </code>
+        </pre>
       </div>
 
       <div id="large" class="section scrollspy">
@@ -183,11 +198,15 @@
         <a class="waves-effect waves-light btn-large">Button</a>
         <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
         <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
-        <pre><code class="language-markup col s12">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup col s12 copiedText">
 &lt;a class="waves-effect waves-light btn-large">Button&lt;/a>
 &lt;a class="waves-effect waves-light btn-large">&lt;i class="material-icons left">cloud&lt;/i>button&lt;/a>
 &lt;a class="waves-effect waves-light btn-large">&lt;i class="material-icons right">cloud&lt;/i>button&lt;/a>
-        </code></pre>
+          </code>
+        </pre>
       </div>
 
 
@@ -197,11 +216,15 @@
         <a class="waves-effect waves-light btn-small">Button</a>
         <a class="waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>button</a>
         <a class="waves-effect waves-light btn-small"><i class="material-icons right">cloud</i>button</a>
-        <pre><code class="language-markup col s12">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup col s12 copiedText">
 &lt;a class="waves-effect waves-light btn-small">Button&lt;/a>
 &lt;a class="waves-effect waves-light btn-small">&lt;i class="material-icons left">cloud&lt;/i>button&lt;/a>
 &lt;a class="waves-effect waves-light btn-small">&lt;i class="material-icons right">cloud&lt;/i>button&lt;/a>
-        </code></pre>
+          </code>
+        </pre>
       </div>
 
 
@@ -212,12 +235,16 @@
         <a class="btn disabled">Button</a>
         <a class="btn-flat disabled">Button</a>
         <a class="btn-floating disabled"><i class="material-icons">add</i></a>
-        <pre><code class="language-markup col s12">
+        <pre style="padding-top: 0px;">
+          <span class="copyMessage">Copied!</span>
+          <i class="material-icons copyButton">content_copy</i>
+          <code class="language-markup col s12 copiedText">
 &lt;a class="btn-large disabled">Button&lt;/a>
 &lt;a class="btn disabled">Button&lt;/a>
 &lt;a class="btn-flat disabled">Button&lt;/a>
 &lt;a class="btn-floating disabled">&lt;i class="material-icons">add&lt;/i>&lt;/a>
-        </code></pre>
+          </code>
+        </pre>
       </div>
 
     </div>
@@ -273,7 +300,7 @@
         </div>
       </div>
     </footer>
-
+    
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>if (!window.jQuery) { document.write('<script src="bin/jquery-3.2.1.min.js"><\/script>'); }
